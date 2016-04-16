@@ -12,11 +12,11 @@
   <name>Parent</name>
 
   <modules>
-    <!-- <module>core</module>
-    <module>db</module>
-    <module>ws</module>
-    <module>mvc</module>
-    <module>batch</module> -->
+    <!-- <module>core-sample</module>
+    <module>db-sample</module>
+    <module>ws-sample</module>
+    <module>mvc-sample</module>
+    <module>batch-sample</module> -->
   </modules>
 
   
