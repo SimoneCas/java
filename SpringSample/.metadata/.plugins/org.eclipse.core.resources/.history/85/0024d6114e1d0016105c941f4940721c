@@ -1,5 +1,0 @@
-package mvcsample.repository;
-
-public interface UserRepository {
-
-}
