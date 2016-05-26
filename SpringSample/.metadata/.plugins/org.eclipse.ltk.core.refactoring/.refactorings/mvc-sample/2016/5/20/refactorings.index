@@ -1,0 +1,5 @@
+1463445045821	Move 'index.jsp' to 'resources'
+1463445110984	Move 'home.jsp' to 'views'
+1463445139809	Move 'views' to 'WEB-INF'
+1463445160248	Move 'index.jsp' to 'WEB-INF'
+1463613055186	Rename type 'UserInterface'

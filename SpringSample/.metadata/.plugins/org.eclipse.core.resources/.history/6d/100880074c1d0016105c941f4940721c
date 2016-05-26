@@ -1,0 +1,5 @@
+package mvcsample.model;
+
+public class User {
+
+}

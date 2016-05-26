@@ -1,0 +1,9 @@
+import org.ju
+
+public class HomeControllerTest {
+
+	@Test
+	public void testHomePage() throws Exception {
+		assert
+	}
+}

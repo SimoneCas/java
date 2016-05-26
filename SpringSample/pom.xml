@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>it.simonecasamassa</groupId>
+  <groupId>it.simonecasamassa.spring</groupId>
   <artifactId>springsample</artifactId>
   <version>1.0</version>
 
@@ -12,11 +10,13 @@
   <name>Parent</name>
 
   <modules>
-    <!-- <module>core-sample</module>
+    <module>core-sample</module>
+    <!--
     <module>db-sample</module>
     <module>ws-sample</module>
     <module>mvc-sample</module>
     <module>batch-sample</module> -->
+    <module>mvc-sample</module>
   </modules>
 
   

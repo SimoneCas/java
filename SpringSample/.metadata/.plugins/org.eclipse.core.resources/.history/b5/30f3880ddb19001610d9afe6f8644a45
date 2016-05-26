@@ -1,0 +1,5 @@
+package mvcsample.config;
+
+public class MvcSampleWebAppInitializer {
+
+}

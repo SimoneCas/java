@@ -1,0 +1,5 @@
+package mvcsample.controller;
+
+public class HomeController {
+
+}

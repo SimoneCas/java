@@ -1,0 +1,13 @@
+import static org.junit.Assert.assertEquals;
+import mvcsample.controller.HomeController;
+
+import org.junit.Test;
+
+public class HomeControllerTest {
+
+	@Test
+	public void testHomePage() throws Exception {
+		HomeController controller = new HomeController();
+		assertEquals("home", controller.home());
+	}
+}
