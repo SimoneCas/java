@@ -6,10 +6,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
-@RequestMapping({"/", "/homepage"})
+@RequestMapping({ "/", "/homepage" })
+// il metodo mappa entrambe le richieste 
+// all'unico metodo home() perchè unico
 public class HomeController {
-	@RequestMapping(method = GET) //ho portato sulla classe il patch che viene catturato
+
+	// @RequestMapping(value="/", method=GET) mapping 
+	// a livello di metodo
+	@RequestMapping(method = GET)
 	public String home() {
 		return "home";
 	}
 }
+

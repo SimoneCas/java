@@ -11,10 +11,12 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan("mvcsample")  //ricordarsi che il parametro dell'annotazione è il package da cui ricercare i component
+@ComponentScan("mvcsample")
+// ricordarsi che il parametro dell'annotazione è il package da cui ricercare i
+// component
 public class WebConfig extends WebMvcConfigurerAdapter {
-	
-	//Configure a JSP view resolver
+
+	// Configure a JSP view resolver
 	@Bean
 	public ViewResolver viewResolver() {
 		InternalResourceViewResolver resolver = new InternalResourceViewResolver();
@@ -24,7 +26,7 @@ public class WebConfig extends WebMvcConfigurerAdapter {
 		return resolver;
 	}
 
-	//Configure static content handling
+	// Configure static content handling
 	@Override
 	public void configureDefaultServletHandling(
 			DefaultServletHandlerConfigurer configurer) {

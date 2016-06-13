@@ -19,3 +19,4 @@ public class MvcSampleWebAppInitializer extends
 		return new Class<?>[] { WebConfig.class };
 	}
 }
+

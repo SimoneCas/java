@@ -9,19 +9,23 @@ import org.junit.Test;
 public class HomeControllerTest {
 
 	/*
-	 * Questo metodo unitario valida solo il comportamento POJO del metodo richiamato ma
-	 * non testa quali richieste vengono intercettate dall'HomeController
-	
+	 * Questo metodo unitario valida solo il comportamento POJO del metodo
+	 * richiamato ma non testa quali richieste vengono intercettate
+	 * dall'HomeController
+	 */
 	@Test
-	public void testHomePage() throws Exception {
+	public void testHomePageBasic() throws Exception {
 		HomeController controller = new HomeController();
 		assertEquals("home", controller.home());
 	}
-	 */
+
 	@Test
-	public void testHomePage() throws Exception{
+	public void testHomePage() throws Exception {
 		HomeController controller = new HomeController();
 		MockMvc mockMvc = standaloneSetup(controller).build();
-		mockMvc.perform(get("/")).andExpect(view().name("home")); //è stata effettuata la chiamata get / e si verifica che la view ritornata sia home
+		mockMvc.perform(get("/")).andExpect(view().name("home"));
+		// è stata effettuata la chiamata get / e si verifica che la view
+		// ritornata sia home
 	}
 }
+
