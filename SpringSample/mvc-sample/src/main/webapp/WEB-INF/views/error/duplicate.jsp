@@ -6,13 +6,11 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>IL CONTROLLER HA FUNZIONATO</title>
+<title>ERROR - DUPLICATE</title>
 </head>
 <body>
-<h1>Welcome User</h1>
-<a href="<c:url value="/users" />">Users</a> |
-<a href="<c:url value="/users/Claudio" />">User by Name</a> |
-<a href="<c:url value="/users/register" />">Register</a>
+<h1>UTENTE INSERITO DUPLICATO</h1>
+
 
 </body>
 </html>

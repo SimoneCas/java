@@ -4,23 +4,56 @@ import java.util.Date;
 
 public class User {
 	private final Long id;
-	private final String name;
-	private final String surname;
+	private  String name;
+	private  String surname;
 	private final Date birthdate;
 	private Double height;
 	private Double weight;
+
+	public User() {
+		this.id = null;
+		this.name=null;
+		this.surname  = null;
+		this.birthdate = null;
+	}
 	
+	
+	public void setName(String name) {
+		this.name = name;
+	}
+
+
+	public void setSurname(String surname) {
+		this.surname = surname;
+	}
+
+
 	public User(String name, String surname, Date time) {
 		this(name, surname, time, null, null);
-		}
-	
-	public User(String name, String surname, Date time, Double height, Double weight){
-		this.id= null;
-		this.name=name;
-		this.surname=surname;
+	}
+
+	public User(Long id, String name, String surname, Date time) {
+		this(id, name, surname, time, null, null);
+	}
+
+	public User(String name, String surname, Date time, Double height,
+			Double weight) {
+		this.id = null;
+		this.name = name;
+		this.surname = surname;
 		this.birthdate = time;
 		this.height = height;
-		this.weight=weight;
+		this.weight = weight;
+	}
+
+	public User(Long id, String name, String surname, Date time, Double height,
+			Double weight) {
+		this.id = id;
+		this.name = name;
+		this.surname = surname;
+		this.birthdate = time;
+		this.height = height;
+		this.weight = weight;
 	}
 
 	public Long getId() {
@@ -46,7 +79,7 @@ public class User {
 	public Double getWeight() {
 		return weight;
 	}
-	
+
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -68,6 +101,7 @@ public class User {
 			return false;
 		return true;
 	}
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
