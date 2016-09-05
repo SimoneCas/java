@@ -17,6 +17,7 @@
     <module>mvc-sample</module>
     <module>batch-sample</module> -->
     <module>mvc-sample</module>
+	<module>rest-sample</module>
   </modules>
 
   
