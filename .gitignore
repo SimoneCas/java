@@ -1,2 +1,22 @@
 .metadata/
 .recommenders/
+SpringSample/batch-parallel-sample/.classpath
+SpringSample/batch-parallel-sample/.project
+SpringSample/batch-parallel-sample/.settings/org.eclipse.core.resources.prefs
+SpringSample/batch-parallel-sample/.settings/org.eclipse.jdt.core.prefs
+SpringSample/batch-parallel-sample/.settings/org.eclipse.m2e.core.prefs
+SpringSample/core-sample/.classpath
+SpringSample/batch-sample/.classpath
+SpringSample/batch-sample/.project
+SpringSample/batch-sample/.settings/org.eclipse.core.resources.prefs
+SpringSample/batch-sample/.settings/org.eclipse.jdt.core.prefs
+SpringSample/batch-sample/.settings/org.eclipse.m2e.core.prefs
+SpringSample/data-sample/.classpath
+SpringSample/data-sample/.project
+SpringSample/data-sample/.settings/org.eclipse.core.resources.prefs
+SpringSample/data-sample/.settings/org.eclipse.jdt.core.prefs
+SpringSample/data-sample/.settings/org.eclipse.m2e.core.prefs
+SpringSample/mvc-sample/.project
+SpringSample/rest-sample/.classpath
+SpringSample/rest-sample/.settings/org.eclipse.wst.common.component
+Servers/Tomcat v7.0 Server at localhost.server

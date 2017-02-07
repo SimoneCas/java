@@ -13,11 +13,12 @@
     <module>core-sample</module>
     <!--
     <module>db-sample</module>
-    <module>ws-sample</module>
-    <module>mvc-sample</module>
-    <module>batch-sample</module> -->
+    -->
+    <module>batch-sample</module> 
     <module>mvc-sample</module>
 	<module>rest-sample</module>
+	<module>batch-parallel-sample</module>
+	<module>data-sample</module>
   </modules>
 
   
