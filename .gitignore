@@ -21,3 +21,5 @@ SpringSample/rest-sample/.classpath
 SpringSample/rest-sample/.settings/org.eclipse.wst.common.component
 Servers/Tomcat v7.0 Server at localhost.server
 SpringSample/batch-parallel-sample/activemq-data/
+Servers/Tomcat v7.0 Server at localhost-config/server.xml
+Servers/Tomcat v7.0 Server at localhost-config/tomcat-users.xml
