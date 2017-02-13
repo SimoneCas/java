@@ -25,3 +25,11 @@ Servers/Tomcat v7.0 Server at localhost-config/server.xml
 Servers/Tomcat v7.0 Server at localhost-config/tomcat-users.xml
 Servers/
 RemoteSystemsTempFiles/
+SpringSample/.project
+SpringSample/.settings/org.eclipse.m2e.core.prefs
+SpringSample/core-sample/.project
+SpringSample/core-sample/.settings/
+SpringSample/mvc-sample/.classpath
+SpringSample/mvc-sample/.settings/
+SpringSample/rest-sample/.project
+SpringSample/rest-sample/.settings/
