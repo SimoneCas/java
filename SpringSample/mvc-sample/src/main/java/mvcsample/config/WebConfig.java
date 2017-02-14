@@ -12,8 +12,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 @Configuration
 @EnableWebMvc
 @ComponentScan("mvcsample")
-// ricordarsi che il parametro dell'annotazione è il package da cui ricercare i
-// component
+
 public class WebConfig extends WebMvcConfigurerAdapter {
 
 	// Configure a JSP view resolver

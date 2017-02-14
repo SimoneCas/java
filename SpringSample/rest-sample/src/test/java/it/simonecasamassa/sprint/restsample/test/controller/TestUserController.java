@@ -5,17 +5,13 @@ import static org.springframework.test.web.servlet.setup.MockMvcBuilders.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.test.util.JsonExpectationsHelper;
-import org.springframework.test.web.servlet.MockMvc;
-import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 
-import com.fasterxml.jackson.annotation.JsonCreator;
+import org.springframework.test.web.servlet.MockMvc;
+
 
 import org.junit.Test;
 
 import it.simonecasamassa.spring.restsample.controller.UserController;
-import it.simonecasamassa.spring.restsample.repository.UserRepository;
 import it.simonecasamassa.spring.restsample.repository.impl.UserCabledRepository;
 import net.minidev.json.JSONObject;
 

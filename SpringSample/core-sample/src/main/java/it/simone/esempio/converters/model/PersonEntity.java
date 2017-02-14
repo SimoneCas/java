@@ -13,8 +13,6 @@ public class PersonEntity {
 	}
 	
 	public PersonEntity(String name, String surname, int age){
-		this.id=id;
-		this.code=code;
 		this.name=name;
 		this.surname=surname;
 		this.age=age;

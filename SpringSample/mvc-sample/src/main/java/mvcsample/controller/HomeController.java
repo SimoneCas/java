@@ -11,8 +11,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 // all'unico metodo home() perchè unico
 public class HomeController {
 
-	// @RequestMapping(value="/", method=GET) mapping 
-	// a livello di metodo
+	// @RequestMapping(value="/", method=GET) eventuale mapping a livello di metodo
 	@RequestMapping(method = GET)
 	public String home() {
 		return "home";

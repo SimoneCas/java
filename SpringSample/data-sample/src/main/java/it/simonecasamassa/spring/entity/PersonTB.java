@@ -13,9 +13,8 @@ import org.springframework.stereotype.Component;
 @Entity
 @Table(name="PERSON")
 @SequenceGenerator(name="seq", initialValue=1000, allocationSize=100)
-public class PersonTB /*extends AbstractPersistable<Long>*/{
+public class PersonTB {
 
-	//private static final long serialVersionUID = -2952735933715107252L;
 	@Id
 	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="seq")
 	private long id;
@@ -32,9 +31,7 @@ public class PersonTB /*extends AbstractPersistable<Long>*/{
 		this.surname = surname;
 		this.age = age;
 	}
-	/*public Long getId(){
-		return id;
-	}*/
+	
 	public String getName() {
 		return name;
 	}

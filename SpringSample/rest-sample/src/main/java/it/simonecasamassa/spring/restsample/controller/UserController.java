@@ -8,7 +8,6 @@ import java.util.List;
 import it.simonecasamassa.spring.restsample.repository.UserRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Required;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -24,10 +23,6 @@ import org.springframework.http.HttpStatus;
 import it.simonecasamassa.spring.restsample.exceptions.UserNotFoundException;
 import it.simonecasamassa.spring.restsample.model.RegisterResponse;
 import it.simonecasamassa.spring.restsample.model.User;
-
-//@Controller
-//Utilizzando l'annotazione RestController si può evitare di inserire in ogni metodo l'annotazione
-// @ResponseBody per far convertire l'oggetto ritornato tramite converter
 
 @RestController
 @RequestMapping("/users")
@@ -53,11 +48,7 @@ public class UserController {
 	@RequestMapping(value = "/{userName}", method = GET, produces="application/json")
 	public /*@ResponseBody*/ User showUserByName(Model model,
 			@PathVariable("userName") String name) {
-		/*
-		User user = userRepository.findOneByName(name);
-		if (user == null )
-			throw new Exception(); 
-		*/
+		
 		if(!name.equals("simone")) 
 			throw new UserNotFoundException(name);
 			

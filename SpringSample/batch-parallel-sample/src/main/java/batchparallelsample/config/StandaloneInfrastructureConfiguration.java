@@ -55,12 +55,6 @@ public class StandaloneInfrastructureConfiguration implements InfrastructureConf
 		return new ActiveMQQueue("queuePerson");
 	}
 	
-	@Bean
-	public Queue queue2() {
-		return new ActiveMQQueue("queuePerson2");
-	}
-	
-	
 	
 	@Bean(name="broker")
 	public BrokerService broker() throws Exception{
@@ -78,7 +72,7 @@ public class StandaloneInfrastructureConfiguration implements InfrastructureConf
 		jmsTemplate.setDefaultDestination(queue());
 		jmsTemplate.setReceiveTimeout(500);
 		for(int i=0; i<100; i++)
-			jmsTemplate.convertAndSend("Prova "+i);
+			jmsTemplate.convertAndSend("Pacchetto "+i);
 		return jmsTemplate;
 	}
 	

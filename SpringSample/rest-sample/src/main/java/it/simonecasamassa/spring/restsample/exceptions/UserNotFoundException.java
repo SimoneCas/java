@@ -7,6 +7,7 @@ import org.springframework.http.HttpStatus;
 				reason="User Not Found")
 public class UserNotFoundException extends RuntimeException{
 	
+	private static final long serialVersionUID = 1259L;
 	private String nameNotFound;
 	
 	public UserNotFoundException(String name){

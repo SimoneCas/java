@@ -1,1 +1,1 @@
-Insert into PERSON (ID,NAME, SURNAME, AGE) values (1,'Simone','Casamassa','28');
+Insert into PERSON (ID,NAME, SURNAME, AGE) values (1,'Simone','Ragni','28');

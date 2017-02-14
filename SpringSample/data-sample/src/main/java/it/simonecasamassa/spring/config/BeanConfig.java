@@ -20,19 +20,6 @@ import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 @ComponentScan({"it.simonecasamassa.spring.entity","it.simonecasamassa.spring.model"})
 @EnableJpaRepositories("it.simonecasamassa.spring.repository")
 public class BeanConfig {
-	/*
-	@Bean
-	public EmbeddedDatabase dataBase(){
-		EmbeddedDatabaseBuilder builder = new EmbeddedDatabaseBuilder();
-		EmbeddedDatabase db = builder.generateUniqueName(true)
-			     .setType(EmbeddedDatabaseType.H2)
-			     .setScriptEncoding("UTF-8")
-			     .ignoreFailedDrops(true)
-			     .addScript("schema.sql")
-			     .addScripts("user_data.sql")
-			     .build();
-		return db;
-	}*/
 	
 	@Bean
 	  public DataSource dataSource() {
@@ -65,27 +52,5 @@ public class BeanConfig {
 	 public JpaTransactionManager jpaTransactionManager(){
 		 return new JpaTransactionManager(entityManagerFactory());
 	 }
-	/*
-	@Bean
-	public LocalContainerEntityManagerFactoryBean entityManagerFactory(
-			DataSource dataSource, JpaVendorAdapter jpaVendorAdapter){
-		LocalContainerEntityManagerFactoryBean emfb = new LocalContainerEntityManagerFactoryBean();
-		emfb.setDataSource(dataSource);
-		emfb.setJpaVendorAdapter(jpaVendorAdapter);
-		emfb.setPackagesToScan("it.simonecasamassa.spring.entity");
-		return emfb;
-		
-	}
-	
-	@Bean
-	public JpaVendorAdapter jpaVendorAdapter(){
-		HibernateJpaVendorAdapter adapter = new HibernateJpaVendorAdapter();
-		adapter.setDatabase(Database.H2);
-		adapter.setShowSql(true);
-		adapter.setGenerateDdl(false);
-		adapter.setDatabasePlatform("org.hibernate.dialect.H2Dialect");
-		
-		return adapter;
-	}*/
 }
 

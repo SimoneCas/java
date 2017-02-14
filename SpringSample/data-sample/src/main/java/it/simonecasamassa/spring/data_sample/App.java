@@ -13,18 +13,13 @@ import it.simonecasamassa.spring.config.BeanConfig;
 import it.simonecasamassa.spring.entity.PersonTB;
 import it.simonecasamassa.spring.repository.PersonRepository;
 
-/**
- * Hello world!
- *
- */
+
 public class App 
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
         ApplicationContext context = new AnnotationConfigApplicationContext(BeanConfig.class);
         EntityManagerFactory emf = (EntityManagerFactory) context.getBean("entityManagerFactory");
-        System.out.println("EntityManagerFactory configurato");
         
         PersonRepository personRepo = (PersonRepository) context.getBean("personRepository");
         PersonTB person = new PersonTB();
@@ -44,12 +39,12 @@ public class App
         person3.setSurname("Atori");
         person3.setAge(25);
         int count2 = personRepo.findAll().size();
-        System.out.println("Numero persone in tabella (prima salvataggio): "+count2);
+        System.out.println("Numero persone in tabella (dopo primo salvataggio): "+count2);
         personRepo.save(person3);
         
         List<PersonTB> people2 = personRepo.findAll();
         count = people2.size();
-        System.out.println("Numero persone in tabella (dopo salvataggio): "+count);
+        System.out.println("Numero persone in tabella (dopo secondo salvataggio): "+count);
         for(PersonTB pers: people2){
         	System.out.println("Surname : "+ pers.getSurname());
         }

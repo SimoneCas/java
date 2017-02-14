@@ -13,15 +13,6 @@ public class BeanJavaConfiguration {
 	public SupportoMultimediale vhs() {
 		return new Vhs();
 	}
-	
-	/*
-	 * QUESTA forma può essere non chiara perchè a prima occhiata sembra che si
-	 * stia richiamando il metodo e non che venga passato il bean da spring-
-	 * sotto altro metodo
-	 * 
-	 * @Bean 
-	 * public CdPlayer cdPlayer() { return new CdPlayer(sgtPeppers()); }
-	 */
 
 	@Bean
 	public LettoreMultimediale lettoreMultimediale(

@@ -1,6 +1,7 @@
 package it.simone.esempio.converters;
 
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import it.simone.esempio.converters.BeanConfiguration;
@@ -14,6 +15,7 @@ public class AppConverter {
 		PersonData person = new PersonData("Simone", "Casamassa", 28);
 		ct.test(person);
 		
+		((ConfigurableApplicationContext) context).close();
 	}
 
 }

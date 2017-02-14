@@ -24,8 +24,6 @@ public class HomeControllerTest {
 		HomeController controller = new HomeController();
 		MockMvc mockMvc = standaloneSetup(controller).build();
 		mockMvc.perform(get("/")).andExpect(view().name("home"));
-		// è stata effettuata la chiamata get / e si verifica che la view
-		// ritornata sia home
 	}
 }
 
